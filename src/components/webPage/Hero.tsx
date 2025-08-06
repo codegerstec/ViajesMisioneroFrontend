@@ -8,6 +8,7 @@ import {
   formatearDinero,
   formatearHora,
 } from "@/helpers/index";
+import Loading from "../Loading";
 
 export default function Hero() {
   const [evento, setEvento] = useState<Evento | null>(null);
@@ -24,11 +25,22 @@ export default function Hero() {
     obtenerEvento();
   }, []);
 
+  if (!evento) {
+    return <Loading />;
+  }
+
+
   return (
-    <section className="bg-[#150f0a] py-20">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 gap-8 px-6 items-center">
+    <section className="bg-[#150f0a] py-10">
+      <div className="text-center mb-2 p-4">
+        <h1 className="text-4xl font-black text-gray-200">Nuestro Último Evento</h1>
+        <p className="text-xl font-light text-gray-400 mt-3 mb-5">
+          Inscribete al evento y se parte de este hermoso momento de bendición para ti y tu familia
+        </p>
+      </div>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 gap-8 px-4 items-center">
         {/* Imagen a la izquierda */}
-        <div className="md:col-span-3 relative h-[850px]">
+        <div className="md:col-span-3 relative h-[360px] md:h-[600px]">
           <img
             src={
               typeof evento?.imagen === "string"
@@ -43,8 +55,8 @@ export default function Hero() {
         </div>
 
         {/* Información del evento a la derecha */}
-        <div className="md:col-span-3 -mt-10 md:-mt-5 relative z-10 md:-ml-16">
-          <div className="bg-[#5928c0] text-white p-8 md:p-10 shadow-2xl h-full w-full">
+        <div className="md:col-span-3 -mt-10 md:-mt-5 relative z-10 md:-ml-12">
+          <div className="bg-[#5928c0] text-white p-6 md:p-10 lg:p-16 shadow-2xl h-full w-full">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-snug">
               {evento?.titulo}
             </h1>

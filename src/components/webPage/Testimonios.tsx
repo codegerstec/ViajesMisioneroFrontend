@@ -1,4 +1,3 @@
-
 export default function Testimonios() {
   return (
     <section className="bg-gray-900 text-white py-16">
@@ -12,20 +11,29 @@ export default function Testimonios() {
               “Sentí la presencia de Dios como nunca antes. Esta campaña
               transformó mi vida.”
             </p>
-            <div className="font-semibold text-purple-400">– María Sánchez</div>
+            <div>
+              <p className="text-purple-500 font-semibold">María Sánchez</p>
+              <p className="text-gray-400 text-sm italic">MMM - San Luis</p>
+            </div>
           </div>
           <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
             <p className="italic mb-4">
               “Un tiempo de adoración profundo. La prédica me habló directo al
               corazón.”
             </p>
-            <div className="font-semibold text-purple-400">– Juan Pérez</div>
+            <div>
+              <p className="text-purple-500 font-semibold">Juan Pérez</p>
+              <p className="text-gray-400 text-sm italic">MMM - La Esperanza</p>
+            </div>
           </div>
           <div className="bg-gray-800 p-6 rounded-xl shadow-lg">
             <p className="italic mb-4">
               “No iba a asistir, pero Dios me sorprendió. ¡Volví renovado!”
             </p>
-            <div className="font-semibold text-purple-400">– Carla Mendoza</div>
+            <div>
+              <p className="text-purple-500 font-semibold">Carla Mendoza</p>
+              <p className="text-gray-400 text-sm italic">MMM - Ingenio Bajo</p>
+            </div>
           </div>
         </div>
       </div>
