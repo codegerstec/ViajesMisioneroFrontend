@@ -1,14 +1,14 @@
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 export default function Header() {
   return (
-    <header className="bg-black border-b border-gray-800 py-4 px-6 flex justify-between items-center sticky top-0 z-50">
+    <header className="bg-emerald-950 border-b border-gray-800 py-4 px-6 flex justify-between items-center sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div>
           <a href="/">
             <img
-              src="logo.png"
+              src="logoSanLuis.jpg"
               alt="Logo"
-              className="w-16 h-auto"
+              className="w-12 h-12 rounded-full"
             />
           </a>
         </div>
