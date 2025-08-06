@@ -230,7 +230,7 @@ export default function PanelParticipantes() {
         <div className="bg-white p-4 rounded shadow flex items-center space-x-4">
           <FaMoneyBillWave className="text-green-500 text-xl" />
           <div>
-            <p className="text-gray-500 text-sm">Personas Pagas por Yape</p>
+            <p className="text-gray-500 text-sm">Pagaron por Yape</p>
             <p className="text-xl font-bold">
               {filteredData.filter((p) => p.metodoPago === "Yape").length}
             </p>
@@ -239,9 +239,7 @@ export default function PanelParticipantes() {
         <div className="bg-white p-4 rounded shadow flex items-center space-x-4">
           <FaUniversity className="text-purple-500 text-xl" />
           <div>
-            <p className="text-gray-500 text-sm">
-              Personas Pagas por Transferencias
-            </p>
+            <p className="text-gray-500 text-sm">Pagaron por Transferencias</p>
             <p className="text-xl font-bold">
               {
                 filteredData.filter((p) => p.metodoPago === "Transferencia")
@@ -266,7 +264,7 @@ export default function PanelParticipantes() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <input
             type="text"
-            placeholder="Buscar por nombre o DNI..."
+            placeholder="Buscar por nombres, apellidos, email..."
             className="w-full md:w-1/3 px-4 py-2 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all text-black placeholder:text-gray-500 "
             value={search}
             onChange={(e) => setSearch(e.target.value)}
