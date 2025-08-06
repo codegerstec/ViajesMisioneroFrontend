@@ -38,9 +38,9 @@ export default function Hero() {
           Inscribete al evento y se parte de este hermoso momento de bendición para ti y tu familia
         </p>
       </div>
-      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 gap-8 px-4 items-center">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-6 lg:grid-cols-12 gap-8 px-4 items-center">
         {/* Imagen a la izquierda */}
-        <div className="md:col-span-3 relative h-[360px] md:h-[600px]">
+        <div className="md:col-span-6 lg:grid-cols-6 relative h-[600px] md:h-[900px]">
           <img
             src={
               typeof evento?.imagen === "string"
@@ -55,7 +55,7 @@ export default function Hero() {
         </div>
 
         {/* Información del evento a la derecha */}
-        <div className="md:col-span-3 -mt-10 md:-mt-5 relative z-10 md:-ml-12">
+        <div className="md:col-span-6 lg:grid-cols-6 -mt-10 md:-mt-5 relative z-10 lg:-ml-12">
           <div className="bg-[#5928c0] text-white p-6 md:p-10 lg:p-16 shadow-2xl h-full w-full">
             <h1 className="text-3xl md:text-4xl font-bold mb-4 leading-snug">
               {evento?.titulo}
