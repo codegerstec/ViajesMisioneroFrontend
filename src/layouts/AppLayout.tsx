@@ -6,31 +6,15 @@ import "react-toastify/dist/ReactToastify.css";
 export default function AppLayout() {
   return (
     <>
-      <header className="bg-gray-800 py-5">
-        <div className="flex flex-col md:flex-row justify-between items-center container mx-auto p-3 md:p-0">
+      <header className="bg-gray-800 py-4">
+        <div className="flex md:flex-row justify-between items-center lg:max-w-7xl mx-auto px-6">
           <Link to="/dashboard">
-            <img src="/logo.png" alt="Logo" className="w-16 h-auto" />
+            <img src="/logoSanLuis.jpg" alt="Logo" className="w-16 h-auto rounded-full" />
           </Link>
-
-          <nav className="flex flex-col text-center mt-10 md:mt-0 md:flex-row gap-5 ">
-            <Link
-              to="/dashboard"
-              className="text-white hover:text-amber-200 transition-colors hover:cursor-pointer"
-            >
-              Eventos
-            </Link>
-            <Link
-              to="/participantes"
-              className="text-white hover:text-amber-200 transition-colors hover:cursor-pointer"
-            >
-              Participantes
-            </Link>
-          </nav>
-
           <NavMenu />
         </div>
       </header>
-      <section className="container mx-auto mt-10 p-3 md:p-0">
+      <section className="md:max-w-7xl mx-auto mt-10 p-3">
         <Outlet />
       </section>
       <footer className="bg-gray-800 py-5 mt-10">

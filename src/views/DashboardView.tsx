@@ -66,7 +66,7 @@ export default function DashboardView() {
           <FaUniversity className="text-purple-500 text-xl" />
           <div>
             <p className="text-gray-500 text-sm">
-              Total de Personas Registradas al último evento
+              Registrados al último evento
             </p>
             <p className="text-xl font-bold">
               {eventos?.[eventos.length - 1]?.participantes.length}
