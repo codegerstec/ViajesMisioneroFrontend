@@ -306,18 +306,12 @@ export default function FormInscribirse() {
           </form>
         </div>
 
-        <div className="relative h-full rounded-xl overflow-hidden group">
+        <div className="relative h-[600px] sm:h-[500px] md:h-[600px] lg:h-[900px] rounded-xl overflow-hidden group">
           {/* Imagen de fondo */}
           <img
-            src={
-              typeof eventoActual?.imagen === "string"
-                ? eventoActual.imagen
-                : eventoActual?.imagen
-                ? URL.createObjectURL(eventoActual.imagen)
-                : ""
-            }
-            alt={eventoActual?.titulo}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            src="/hna.png"
+            alt="logo"
+            className="w-full h-full object-cover transition-transform duration-300 "
           />
 
           {/* Capa oscura al hacer hover */}
